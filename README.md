@@ -4,11 +4,11 @@ Description
 
 Create a framework with python according the following
 
-	* Using a page object 
+	* Follow a page object pattern 
  	* Add some tool to create reports (Allure, etc etc)
- 	* Use a data driven for the tests.
-	* Using several browser
- 	* Improve most as possible
+ 	* Implement Data driven to loading data for the test
+	* Use different browsers
+ 	* Improve performance as much as possible
  
 # Prerequisite:
 
