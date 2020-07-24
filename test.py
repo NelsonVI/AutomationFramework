@@ -1,4 +1,5 @@
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 from pages.page_home import *
 from pages.result_page import *
 from pages.check_out_page import *
@@ -8,7 +9,7 @@ import time
 class FlowAvantrip(unittest.TestCase):
 
     def setUp(self):
-        driverPath = "C:/Users/Yamil/Desktop/AutomationFramework/src/chromedriver.exe"
+        driverPath = ChromeDriverManager().install()      
         chorme_options = webdriver.ChromeOptions()
         chorme_options.add_argument('--start-maximized')
         self.driver = webdriver.Chrome(driverPath, options=chorme_options)
